@@ -2,12 +2,12 @@ name: manual approval
 on: push
 jobs:
   Dev:
-    runs: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: running on Development env
         run: "Dev Done"
   Pro:
-    runs: ubuntu-latest
+    runs-on: ubuntu-latest
     needs: Dev
     steps:
       - name: runnin on Productions
