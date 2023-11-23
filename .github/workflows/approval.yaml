@@ -9,7 +9,7 @@ jobs:
         run: echo "Dev Done"
   Production:
     runs-on: ubuntu-latest
-    environment: Pro
+    environment: Development
     needs: Dev
     steps:
       - name: runnin on Productions
