@@ -1,13 +1,15 @@
 name: manual approval
 on: push
 jobs:
-  Dev:
+  Development:
     runs-on: ubuntu-latest
+    environment: Dev
     steps:
       - name: running on Development env
         run: echo "Dev Done"
-  Pro:
+  Production:
     runs-on: ubuntu-latest
+    environment: Pro
     needs: Dev
     steps:
       - name: runnin on Productions
